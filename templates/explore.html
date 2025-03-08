@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="search-section">
+    <form method="GET" action="/search_artists">
+        <input type="text" name="q" placeholder="Search artists..." required>
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<main class="explore-grid">
+    <section class="explore">
+        <h1>Explore Artists</h1>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/dj-coolcat.jpg" width="100" alt="DJ Coolcat">
+            <h2>DJ Coolcat</h2>
+            <p>Master of chill and lo-fi beats. Known for ambient soundscapes that transport listeners to another world.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/synthmaster.jpg" alt="SynthMaster">
+            <h2>SynthMaster</h2>
+            <p>Retro-wave genius blending nostalgia with future beats. His tracks light up every sunset drive.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/night_drive.jpg" alt="Moonlit">
+            <h2>Moonlit</h2>
+            <p>Creator of atmospheric, immersive tracks that make every night drive unforgettable.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/echo_drift.jpg" alt="Diffusse">
+            <h2>Diffusse</h2>
+            <p>Dubstep prodigy crafting deep, echoing drops that resonate across the underground scene.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/EDM.jpg" alt="Electric Dream Machine">
+            <h2>Electric Dream Machine</h2>
+            <p>Reviving 80s glam with a femme twist. Electric performances and unforgettable ballads.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/digital_bloom.jpg" alt="Reverse-Flipside">
+            <h2>Reverse-Flipside</h2>
+            <p>Electronic pioneer blending vibrant synths with blooming digital landscapes.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/deadfully_pale.jpg" alt="The Remisses">
+            <h2>The Remisses</h2>
+            <p>Dark, brooding rock with haunting riffs that echo into the pale moonlight.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/metal_outlaws.jpg" alt="Redemption">
+            <h2>Redemption</h2>
+            <p>Fierce metal band bringing redemption through thundering riffs and outlaw energy.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/solar_flare.jpg" alt="Kokikola Pepsico">
+            <h2>Kokikola Pepsico</h2>
+            <p>Bright, energetic pop designed to light up your playlist like a solar flare.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/static_shock.jpg" alt="Pink Bizmuth">
+            <h2>Pink Bizmuth</h2>
+            <p>Heavy metal infused with electric energy, leaving audiences in a state of static shock.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/notabutt.jpg" alt="But It's Not A Butt">
+            <h2>But It's Not A Butt</h2>
+            <p>Rock band with humorous undertones and riffs that may look like a butt, but aren't.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/mostly_drunk.jpg" alt="12-Steps">
+            <h2>12-Steps</h2>
+            <p>Metal band chronicling tales of indulgence, chaos, and cathartic sobriety.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/midnight_air.jpg" alt="Pulse Width">
+            <h2>Pulse Width</h2>
+            <p>Electronica artist crafting smooth beats for late-night airwaves and dimly lit rooms.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/floppy_stick.jpg" alt="Groan Putnam">
+            <h2>Groan Putnam</h2>
+            <p>Whimsical and catchy pop melodies with humor that's hard to forget.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/semt_hard.jpg" alt="A.I. ft. Jeninena Rockham">
+            <h2>A.I. ft. Jeninena Rockham</h2>
+            <p>Pop duo redefining soft and hard music with futuristic twists and semi-hard beats.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/electric_hit.jpg" alt="Patty Cam">
+            <h2>Patty Cam</h2>
+            <p>Dance-pop sensation delivering hit after electric hit across streaming platforms.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/bowling_rowns.jpg" alt="The Bowling Pwns">
+            <h2>The Bowling Pwns</h2>
+            <p>Rock meets bowling alley grunge. Strike after strike of sonic perfection.</p>
+        </div>
+
+        <div class="artist-tile">
+            <img src="/static/images/artists/stick_it_out.jpg" alt="Intentionally Bad">
+            <h2>Intentionally Bad</h2>
+            <p>Metal group embracing chaotic, raw energy to stick it out in the toughest jams.</p>
+        </div>
+    </section>
+</main>
+{% endblock %}

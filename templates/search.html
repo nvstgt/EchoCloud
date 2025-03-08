@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="search-section">
+        <form method="GET" action="/search_artists">
+            <input type="text" name="q" placeholder="Search artists..." required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+<section class="search-results">
+  <h1>Search Results</h1>
+  {% if results %}
+    <ul class="results-list">
+      {% for result in results %}
+        <li class="result-item">
+          <h2>{{ result.name }}</h2>
+          <p>{{ result.bio }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No results found.</p>
+  {% endif %}
+</section>
+{% endblock %}

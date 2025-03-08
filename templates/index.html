@@ -1,0 +1,296 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>Discover New Music Every Day</h1>
+    <p>Share your tracks, connect with artists, and explore new sounds.</p>
+    <button onclick="uploadTrack()">Upload Your Track</button>
+</section>
+
+<section class="track-list">
+    <h2>Rad SUmmer Hitz List - @TheProfezzorJ</h2>
+    
+    <div class="track" data-src="/static/music/1-Chill_Vibes.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/chill_vibes.jpg');"></div>
+        <div class="track-info">
+            <h3>Chill Vibes</h3>
+            <p>By DJ Coolcat</p>
+            <p>Genre: Electronica</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/2-Retro_Sunset.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/synthmaster.jpg');"></div>
+        <div class="track-info">
+            <h3>Retro Sunset</h3>
+            <p>By SynthMaster</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/3-Conducción_Nocturna.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/moonlit.jpg');"></div>
+        <div class="track-info">
+            <h3>Conducción Nocturna (Night Drive)</h3>
+            <p>By Moonlit</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/4-Echo_Drift.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/echo_drift.jpg');"></div>
+        <div class="track-info">
+            <h3>Echo Drift</h3>
+            <p>By Diffusse</p>
+            <p>Genre: Dubstep</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/5-The_Nightman_Cometh.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/nightman.jpg');"></div>
+        <div class="track-info">
+            <h3>The Nightman Cometh</h3>
+            <p>By Electric Dream Machine</p>
+            <p>Genre: 80s Glam Femme</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/6-Digital_Bloom.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/digital_bloom.jpg');"></div>
+        <div class="track-info">
+            <h3>Digital Bloom</h3>
+            <p>By Reverse-Flipside</p>
+            <p>Genre: Electronica</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/7-Dreadfully_Pale.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/deadfully_pale.jpg');"></div>
+        <div class="track-info">
+            <h3>Dreadfully Pale</h3>
+            <p>By The Remisses</p>
+            <p>Genre: Rock</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/8-Lost_in_Echoes.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/lost_in_echos.jpg');"></div>
+        <div class="track-info">
+            <h3>Lost in Echos</h3>
+            <p>By Doot-n-Toot</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/9-Metal_Outlaws_Redemption.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/metal_outlaws.jpg');"></div>
+        <div class="track-info">
+            <h3>Metal Outlaws</h3>
+            <p>By Redemption</p>
+            <p>Genre: Metal</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/10-Solar_Flare.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/solar_flare.jpg');"></div>
+        <div class="track-info">
+            <h3>Solar Flare</h3>
+            <p>By Kokikola Pepsico</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/11-Static_Shock.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/static_shock.jpg');"></div>
+        <div class="track-info">
+            <h3>Static Shock</h3>
+            <p>By Pink Bizmuth</p>
+            <p>Genre: Metal</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/12-Not_a_Butt.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/notabutt.jpg');"></div>
+        <div class="track-info">
+            <h3>This Looks Like A Butt</h3>
+            <p>By But It's Not A Butt</p>
+            <p>Genre: Rock</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/13-Mostly_Drunk.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/mostly_drunk.jpg');"></div>
+        <div class="track-info">
+            <h3>Mostly Drunk</h3>
+            <p>By 12-Steps</p>
+            <p>Genre: Metal</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/14-Midnight_Air.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/midnight_air.jpg');"></div>
+        <div class="track-info">
+            <h3>Midnight Air</h3>
+            <p>By Pulse Width</p>
+            <p>Genre: Electronica</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/15-Floppy_Stick.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/floppy_stick.jpg');"></div>
+        <div class="track-info">
+            <h3>Floppy Sticks</h3>
+            <p>By Groan Putnam</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/16-Semt_Hard.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/semt_hard.jpg');"></div>
+        <div class="track-info">
+            <h3>Semt Hard</h3>
+            <p>By A.I. (Another Idiot) ft. Jeninena Rockham</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/17-Electric_Hits.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/electric_hit.jpg');"></div>
+        <div class="track-info">
+            <h3>Electric Hits</h3>
+            <p>By Patty Cam</p>
+            <p>Genre: Pop</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/18_Chill_Vibes2.mp3">
+        <div class="track-cover" style="background-image: url('{{ url_for('static', filename='images/albums/chill_vibes2.jpg') }}');"></div>
+
+        <div class="track-info">
+            <h3>Chill Vibes 2</h3>
+            <p>By DJ Coolcat</p>
+            <p>Genre: Electronica</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/19-Bowling_Rowns.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/bowling_rowns.jpg');"></div>
+        <div class="track-info">
+            <h3>Stars Align</h3>
+            <p>By The Bowling Pwns</p>
+            <p>Genre: Rock</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <div class="track" data-src="/static/music/20-Stick_It_Out.mp3">
+        <div class="track-cover" style="background-image: url('/static/images/albums/stick_it_out.jpg');"></div>
+        <div class="track-info">
+            <h3>Stick it Out</h3>
+            <p>By Intentionally Bad</p>
+            <p>Genre: Metal</p>
+            <div class="progress-container">
+                <input type="range" class="progress-bar" value="0" min="0" max="100" />
+                <span class="time-remaining">0:00</span>
+            </div>
+        </div>
+        <button class="play-button">Play</button>
+    </div>
+    
+    <audio id="audio-player" style="display: none;"></audio>
+</section>
+{% endblock %}

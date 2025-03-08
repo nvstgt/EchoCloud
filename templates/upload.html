@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="error-container">
+    <h1>Track Not Found</h1>
+    <p>Sorry, the track you're looking for cannot be found. If you believe this is an error, please re-upload your track below.</p>
+    
+    <form method="POST" action="/upload" class="upload-form">
+        <div class="form-group">
+            <label for="track_name">Track Name:</label>
+            <input type="text" name="track_name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="artist_name">Artist Name:</label>
+            <input type="text" name="artist_name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea name="description" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="custom_html">Upload Artwork (Optional):</label>
+            <textarea name="custom_html" rows="4" placeholder="Paste HTML for album art..."></textarea>
+        </div>
+
+        <button type="submit">Upload Track</button>
+    </form>
+</div>
+{% endblock %}

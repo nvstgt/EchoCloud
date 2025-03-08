@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="artists">
+    <h1>Discover Artists</h1>
+    <div class="artist-list">
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='img/artist1.jpg') }}" alt="Artist 1">
+            <h2><a href="/artist/1">Echo Drift</a></h2>
+            <p>Genre: Synthwave</p>
+        </div>
+
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='img/artist2.jpg') }}" alt="Artist 2">
+            <h2><a href="/artist/2">Violet Pulse</a></h2>
+            <p>Genre: Ambient</p>
+        </div>
+
+        <div class="artist-card">
+            <img src="{{ url_for('static', filename='img/artist3.jpg') }}" alt="Artist 3">
+            <h2><a href="/artist/3">Neon Static</a></h2>
+            <p>Genre: Electronica</p>
+        </div>
+		
+		<div class="artist-card">
+            <img src="{{ url_for('static', filename='img/artist4.jpg') }}" alt="Artist 4">
+            <h2><a href="/artist/4">Electric Dream Machine</a></h2>
+            <p>Genre: 80s Glam Rock Femme</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

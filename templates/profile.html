@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="profile-container">
+    <h1>Welcome, {{ username }}</h1>
+    <img src="/static/images/profiles/{{ username }}-avatar.png" alt="Profile Picture" class="profile-avatar">
+    <p>Email: {{ email }}</p>
+    <p>Member since: {{ member_since }}</p>
+    <p>Favorite Genre: {{ favorite_genre }}</p>
+    <h2>Recent Uploads (Past 30 Days):</h2>
+    <ul>
+        {% for upload in uploads %}
+            <li>{{ upload.date }} - {{ upload.title }} by {{ upload.artist }}</li>
+        {% else %}
+            <li>No uploads found.</li>
+        {% endfor %}
+    </ul>
+
+    <section class="search-section">
+        <form method="GET" action="/logout">
+            <button type="submit">Logout</button>
+        </form>
+    </section>
+</div>
+{% endblock %}
