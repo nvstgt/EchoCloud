@@ -1,0 +1,40 @@
+.artist-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.artist-page img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.artist-page h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.artist-page p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
+}
+
+.artist-tracks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.track {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.track audio {
+    width: 100%;
+    margin-top: 15px;
+}
